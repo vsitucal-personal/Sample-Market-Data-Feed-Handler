@@ -23,7 +23,7 @@ public class Main
     
     public static void main(String[] args)
     {
-        CSenderThread senderThread = new CSenderThread("sample_market_data.txt", "localhost", 8989);
+        CSenderThread senderThread = new CSenderThread(args[0], "localhost", 8989);
         CReceiverThread receiverThread = new CReceiverThread("localhost", 8989);
         receiverThread.start();
         senderThread.start();
