@@ -9,5 +9,5 @@ Running from command line without IDE\
 -clone this project to your machine\
 -After cloning, enter the commands below. sample_market_data.txt should be in the directory you are working on \
 $ cd Sample-Market-Data-Feed-Handler\
-$ java -cp build\classes mdfh.Main sample_market_data.txt\
+$ java -cp build\classes mdfh.Main sample_market_data.txt
 
