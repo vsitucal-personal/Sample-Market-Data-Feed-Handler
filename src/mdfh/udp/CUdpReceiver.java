@@ -35,7 +35,7 @@ public class CUdpReceiver
             InetSocketAddress address = new InetSocketAddress(host,port);
             server.bind(address);
             System.out.println("Server Started: " + address);
-            ByteBuffer buffer = ByteBuffer.allocate(1024);
+            ByteBuffer buffer = ByteBuffer.allocate(4096);
             
             //receive buffer from client.
             SocketAddress remoteAdd = server.receive(buffer);
